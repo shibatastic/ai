@@ -1,2 +1,2 @@
 # ai
-lt's use copilot
+Beginner's guide to copilot.
