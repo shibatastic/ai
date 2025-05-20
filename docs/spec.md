@@ -1,6 +1,7 @@
 # 仕様
 
 - responsible
+- splash screen
 - bootstrap
     - [bootstrap](https://getbootstrap.jp/docs/5.3/getting-started/introduction/)
 - lottie animation

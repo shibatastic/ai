@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スプラッシュ画面</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="splash">
+        <h1>ようこそ！</h1>
+        <p>AIアシスタントの世界へ</p>
+    </div>
+    <div id="main-content">
+        <h2>メインコンテンツ</h2>
+        <p>ここにサイトの本編が表示されます。</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+#splash {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: #0078D7;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: opacity 0.5s ease-out;
+}
+
+#main-content {
+    display: none;
+    padding: 20px;
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    // ページの読み込みが完了したらスプラッシュ画面を非表示にする
+    let splash = document.getElementById("splash");
+    let mainContent = document.getElementById("main-content");
+
+    splash.style.opacity = "0"; // フェードアウト効果
+
+    setTimeout(() => {
+        splash.style.display = "none";
+        mainContent.style.display = "block";
+    }, 500); // CSSのtransitionに合わせて少し遅延
+});
