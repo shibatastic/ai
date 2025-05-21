@@ -1,53 +1,57 @@
 /* CSS Template */
 
-
 :root {
-    --primary-color: #3498db;
-    --secondary-color: #2ecc71;
-    --font-family: 'Segoe UI', Arial, sans-serif;
-    --base-padding: 16px;
-    --base-margin: 16px;
-    --border-radius: 4px;
+  --primary-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-family: "Segoe UI", Arial, sans-serif;
+  --base-padding: 16px;
+  --base-margin: 16px;
+  --border-radius: 4px;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    font-family: var(--font-family);
-    background: #f5f6fa;
-    color: #222;
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+  background: #f5f6fa;
+  color: #222;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin-top: 0;
-    font-weight: 600;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: 600;
 }
 
 a {
-    color: var(--primary-color);
-    text-decoration: none;
+  color: var(--primary-color);
+  text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 button {
-    background: var(--primary-color);
-    color: #fff;
-    border: none;
-    border-radius: var(--border-radius);
-    padding: 0.5em 1em;
-    cursor: pointer;
-    transition: background 0.2s;
+  background: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: var(--border-radius);
+  padding: 0.5em 1em;
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
 button:hover {
-    background: var(--secondary-color);
+  background: var(--secondary-color);
 }
 
 .container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: var(--base-padding);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--base-padding);
 }
