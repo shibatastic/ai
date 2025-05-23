@@ -1,0 +1,33 @@
+javascriptで書きを実装したいコードを書いて htmlの<input type="text" class="write">に書いた文字を<input type="submit">でcopilot.comのクエリとして"?q="のあとに入力、送信し、copilot.comのページを別ウインドウで表示する
+
+以下のコードで、<input type="text" class="write"> に入力されたテキストを、<input type="submit"> のクリック時に copilot.com?q=入力値 の形式で別ウィンドウに表示できます。
+
+
+
+
+<body>
+    <input type="text" class="write" placeholder="Copilotに聞いてみる">
+    <input type="submit" value="命令！" onclick="searchCopilot()">
+
+    <script>
+        function searchCopilot() {
+            // 入力フィールドの値を取得
+            const query = document.querySelector(".write").value;
+            
+            // クエリをエンコードして URL を作成
+            const url = `https://copilot.com?q=${encodeURIComponent(query)}`;
+            
+            // 別ウィンドウで開く
+            window.open(url, "_blank", "noopener,noreferrer");
+        }
+    </script>
+</body>
+</html>
+
+- document.querySelector(".write").value で入力された文字を取得
+- encodeURIComponent(query) でURLエンコードして、安全に送信
+- window.open(url, "_blank") で別ウィンドウで開く
+- window.open(url, "_blank", "noopener,noreferrer"); の第3引数に noopener,noreferrer を指定することで、セキュリティ強化が可能。
+- noopener は、新しいタブから元のページ (window.opener) への参照を遮断し、悪意あるページが元のページを操作するのを防ぐ。
+- noreferrer は、リンク元の情報（リファラー）を送信しないようにする。
+
