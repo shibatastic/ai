@@ -2,6 +2,9 @@
 
 - responsible
 - splash screen
+- copilot
+  - <a href="https://copilot.microsoft.com/?q=%E3%81%82%E3%81%97%E3%81%9F%E3%81%AE%E5%A4%A9%E6%B0%97%E3%82%92%E6%95%99%E3%81%88%E3%81%A6" target="_blank" rel="noopener noreferrer">あしたの天気を教えて</a>
+  - [URLエンコード](https://www.tagindex.com/cgi-lib/encode/url.cgi)
 - bootstrap
   - [bootstrap](https://getbootstrap.jp/docs/5.3/getting-started/introduction/)
   - [icons](https://icons.getbootstrap.jp/)
