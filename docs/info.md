@@ -73,7 +73,9 @@ https://copilot.microsoft.com/
 
 ### Copilot の使い方
 
-1. Copilotを開く　URL　win11アプリ起動　Edge
+1. Copilotを開く
+  - https://copilot.microsoft.com/
+  - win11アプリ起動
 2. チャット欄に質問や依頼を入力する
 Copilotは、文章の作成、情報の検索、アイデアの提案など、さまざまなことをサポートできます。例えば：
 - 「明日の天気を教えて」
