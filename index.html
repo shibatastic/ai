@@ -108,27 +108,24 @@
     <main>
       <!-- 表紙 -->
       <section id="cover" class="">
-        <div class="container">
+        <div class="px-4 py-5 my-5 text-center">
           <h1 id="" class="">
             AIアシスタント&quot;Copilot&quot;を使ってみよう！
           </h1>
-          <h2 id="" class="">
-            知りたいこと、作りたいもの、話したいこと。AI
-            アシスタントなら、すべてがもっと簡単に、もっと楽しく。あなたの可能性を広げる新しいツールを体験しよう。
-          </h2>
+          <p id="" class="lead mb-4">
+            知りたいこと、作りたいもの、話したいこと。<br />AI
+            アシスタントなら、すべてがもっと簡単に、もっと楽しく。<br />あなたの可能性を広げる新しいツールを体験しよう。
+          </p>
+          <a class="" href="#guide">
+            <button type="button" class="btn btn-primary btn-lg px-4 gap-3">
+              はじめてみる
+            </button>
+          </a>
         </div>
       </section>
       <!-- 導入 -->
       <section id="lead" class="">
         <div class="container">
-          <p>
-            <a
-              href="https://copilot.microsoft.com/?q=%E3%81%82%E3%81%97%E3%81%9F%E3%81%AE%E5%A4%A9%E6%B0%97%E3%82%92%E6%95%99%E3%81%88%E3%81%A6"
-              target="_blank"
-              rel="noopener noreferrer"
-              >あしたの天気を教えて</a
-            >
-          </p>
           <p class="">
             最近ニュースで AI を目にする機会が増えていませんか？「AI
             って難しそう…」「どうやって使うの？」そんな疑問を持っている方が多いのではないでしょうか。実は
@@ -160,10 +157,27 @@
       <section id="guide" class="">
         <div class="container">
           <h2 id="" class="">使い方</h2>
+          <p class=""></p>
           <!-- 使い方　1. Copilotを開く -->
           <div class="">
             <h3 class="">1. Copilotを開く</h3>
-            <p class="">- https://copilot.microsoft.com/ - win11アプリ起動</p>
+            <p class="">
+              Copilotはインターネットブラウザ上で利用することができます。<a
+                href="https://copilot.microsoft.com/"
+                rel="noopener noreferrer"
+                >https://copilot.microsoft.com</a
+              >リンクをクリックすると、Copilotのページが開きます。
+            </p>
+            <p class="">
+              また、CopilotはWindows
+              11のPCに標準搭載されています。画面下のタスクバーにある、Copilotのアイコンをクリックして開いてください。もしもアイコンが見つからないときは、以下の手順で開いてみましょう。
+            </p>
+            <ol class="">
+              <li class="">スタートメニューを開く</li>
+              <li class="">検索バーに「Copilot」と入力</li>
+              <li class="">検索結果から「Copilot」を選択</li>
+              <li class="">Copilotが起動します</li>
+            </ol>
           </div>
           <!-- 使い方　2. チャット欄に質問や依頼を入力する -->
           <div class="">
@@ -186,9 +200,16 @@
             <h3 class="">4. 必要に応じて再質問や調整をする</h3>
             <p class="">
               もし答えがイメージと違ったり、もっと詳しく知りたい場合は、「もっと詳しく説明して」「別の視点で考えて」などと伝えてください。より適切な回答を提供するよう調整できます。
+              最初の回答がざっくりしていた場合、「もっと詳しく」「他の選択肢は？」と追加の質問をすることで、より詳しい情報が得られます。
             </p>
           </div>
-
+          <!-- 使い方　5. 作業を完了・活用する -->
+          <div class="">
+            <h3 class="">5. 作業を完了・活用する</h3>
+            <p class="">
+              得られた情報やアイデアを活用して、文章を仕上げたり、計画を立てたりできます。必要なら、再度Copilotを使ってブラッシュアップすることも可能です。
+            </p>
+          </div>
           <!-- 使い方　ポイント -->
           <div class="accordion" id="points">
             <div class="accordion-item">
@@ -399,6 +420,35 @@
       <section id="faq" class="">
         <div class="container">
           <h2 id="" class="">よくある質問</h2>
+          <!-- 質問 0 -->
+          <div class="accordion" id="faq0">
+            <dl class="accordion-item">
+              <dt class="accordion-header">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#faq0-item"
+                  aria-expanded="false"
+                  aria-controls="faq0-item"
+                >
+                  Copilot は無料で使えますか？
+                </button>
+              </dt>
+              <dd
+                id="faq0-item"
+                class="accordion-collapse collapse"
+                data-bs-parent="#faq0"
+                style=""
+              >
+                <div class="accordion-body">
+                  Windows 11
+                  の標準機能やブラウザで無料で利用できます。また、より高度な機能を提供するCopilot
+                  Proなどの有料プランもあります。
+                </div>
+              </dd>
+            </dl>
+          </div>
           <!-- 質問 1 -->
           <div class="accordion" id="faq1">
             <dl class="accordion-item">
@@ -411,7 +461,7 @@
                   aria-expanded="false"
                   aria-controls="faq1-item"
                 >
-                  Copilot は無料で使えますか？
+                  Copilotの利用にはMicrosoftアカウントが必要ですか？
                 </button>
               </dt>
               <dd
@@ -421,8 +471,7 @@
                 style=""
               >
                 <div class="accordion-body">
-                  Windows 11
-                  の標準機能やブラウザで無料で利用できます。一部の追加機能は有料プランで提供されています。
+                  一部の機能（画像生成など）を利用するにはMicrosoftアカウントが必要ですが、基本的な会話はアカウントなしでも可能です。
                 </div>
               </dd>
             </dl>
@@ -654,7 +703,7 @@
                 style=""
               >
                 <div class="accordion-body">
-                  できる限り正確な情報を提供しますが、最新情報の確認のために公式サイトなどを併せてチェックするのがベストです。
+                  できる限り正確な情報を提供しますが、最新情報の確認のために公式サイトなどを併せてチェックするのがベストです。特に重要な情報（医療、法律、金融など）は、公式なサイトや専門家の意見と照らし合わせて確認することをおすすめします。
                 </div>
               </dd>
             </dl>
