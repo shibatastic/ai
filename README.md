@@ -1,2 +1,3 @@
 # ai
-Beginner's guide to copilot.
+Copilot guide for beginners.
+https://shibatastic.github.io/ai/
